@@ -13,3 +13,6 @@ echo "source ~/peda/peda.py" >> ~/.gdbinit
 
 ***gdb-peda cheat sheet
 https://github.com/kibercthulhu/gdb-peda-cheatsheet/blob/master/gdb-peda%20cheatsheet.pdf
+
+***nmap port scan
+nmap -p0- -v -A -T4 [TARGET]
